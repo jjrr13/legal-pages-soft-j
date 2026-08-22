@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money J — Política de Tratamiento de Datos y Términos</title>
+<style>
+  :root {
+    --navy: #00254C;
+    --navy-dark: #001830;
+    --green: #019E6D;
+    --bg: #F7FAF9;
+    --card: #FFFFFF;
+    --text: #14202B;
+    --text-muted: #5B6B75;
+    --border: #E2EAE7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: #fff;
+    padding: 40px 20px 32px;
+    text-align: center;
+  }
+  header .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  header .brand {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  header .brand span { color: var(--green); }
+  header p {
+    margin: 4px 0 0;
+    opacity: 0.9;
+    font-size: 14px;
+  }
+  main {
+    max-width: 720px;
+    margin: -20px auto 60px;
+    padding: 0 16px;
+  }
+  nav.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 14px rgba(0,37,76,0.08);
+  }
+  nav.toc a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 4px 0;
+  }
+  nav.toc a:hover { text-decoration: underline; }
+  section.doc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 14px rgba(0,37,76,0.06);
+  }
+  section.doc h2 {
+    font-size: 22px;
+    color: var(--navy-dark);
+    margin: 0 0 4px;
+  }
+  section.doc .updated {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+  }
+  article.item { margin-bottom: 20px; }
+  article.item:last-child { margin-bottom: 0; }
+  article.item h3 {
+    font-size: 15px;
+    color: var(--green);
+    margin: 0 0 6px;
+  }
+  article.item p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--text);
+  }
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    padding: 0 16px 40px;
+  }
+  footer a { color: var(--navy); }
+  @media (max-width: 480px) {
+    header { padding: 32px 16px 26px; }
+    section.doc { padding: 22px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-row">
+    <span class="brand">Money<span> J</span></span>
+  </div>
+  <p>Política de Tratamiento de Datos Personales y Términos y Condiciones</p>
+</header>
+
+<main>
+  <nav class="toc">
+    <a href="#privacidad">→ Política de Tratamiento de Datos Personales</a>
+    <a href="#terminos">→ Términos y Condiciones</a>
+  </nav>
+
+  <section class="doc" id="privacidad">
+    <h2>Política de Tratamiento de Datos Personales</h2>
+    <div class="updated">Última actualización: 21 de agosto de 2026</div>
+
+    <article class="item">
+      <h3>1. Marco normativo</h3>
+      <p>Esta política se rige por la Ley 1581 de 2012, el Decreto 1377 de 2013 y las demás normas de la República de Colombia que regulan la protección de datos personales (régimen de Habeas Data).</p>
+    </article>
+    <article class="item">
+      <h3>2. Quién es responsable de tus datos</h3>
+      <p>El Responsable del Tratamiento de tus datos personales es J. Jonatan Rojas Reina, persona natural domiciliada en Colombia, contactable en <a href="mailto:jjrrdecali90@gmail.com">jjrrdecali90@gmail.com</a>. Los ingresos, gastos y alertas que registras en Money J describen únicamente tu propia actividad financiera — a diferencia de otras apps de la misma familia que manejan datos de terceros, en Money J no hay ningún dato de otra persona involucrado.</p>
+    </article>
+    <article class="item">
+      <h3>3. Qué datos se recolectan</h3>
+      <p>De tu cuenta: nombre, correo electrónico y, si activas la recuperación local, tus palabras clave de recuperación (guardadas de forma cifrada). De tu actividad financiera: los ingresos, gastos, categorías, alertas y notas que tú registras en la app. Datos técnicos: identificador del dispositivo, versión de la app y registros de uso, usados solo para diagnóstico y mejora del servicio.</p>
+    </article>
+    <article class="item">
+      <h3>4. Para qué se usan</h3>
+      <p>Para prestarte el servicio de control de ingresos y gastos: autenticar tu cuenta, sincronizar tus datos en la nube si tienes Premium, enviarte las alertas y recordatorios que configures, darte soporte, mejorar la aplicación y cumplir obligaciones legales cuando corresponda.</p>
+    </article>
+    <article class="item">
+      <h3>5. Dónde se almacenan tus datos</h3>
+      <p>Tier gratuito: localmente en tu dispositivo (base de datos SQLite), sin salir de tu teléfono salvo que tú decidas exportar un respaldo manualmente. Tier Premium: además de local, tus datos se sincronizan en la nube a través de nuestro proveedor de infraestructura Supabase, accesibles únicamente desde tu propia cuenta. Esto puede implicar que tus datos se alojen en servidores ubicados fuera de Colombia, según la infraestructura que Supabase utilice en cada momento — al aceptar esta política autorizas esa transferencia internacional, que se realiza únicamente para prestarte el servicio (nunca para fines propios de Supabase ni de terceros).</p>
+    </article>
+    <article class="item">
+      <h3>6. Tus derechos (Habeas Data)</h3>
+      <p>Como titular de tus datos, tienes derecho a conocer, actualizar, rectificar y suprimir tu información personal, y a revocar en cualquier momento la autorización que nos diste para tratarla.</p>
+    </article>
+    <article class="item">
+      <h3>7. Cómo ejercer tus derechos</h3>
+      <p>Escríbenos a <a href="mailto:jjrrdecali90@gmail.com">jjrrdecali90@gmail.com</a> para ejercer tus derechos sobre tus datos. Las consultas se atienden en un plazo máximo de 10 días hábiles desde su recepción (prorrogable 5 días hábiles más, informándote el motivo); los reclamos, en un plazo máximo de 15 días hábiles (prorrogable 8 días hábiles más). Si consideras que tu solicitud no fue atendida correctamente, puedes presentar una queja ante la Superintendencia de Industria y Comercio (SIC), autoridad de protección de datos personales en Colombia.</p>
+    </article>
+    <article class="item">
+      <h3>8. Seguridad</h3>
+      <p>Aplicamos medidas técnicas y organizativas razonables para proteger tu información: cifrado en el tránsito de datos hacia la nube y almacenamiento local seguro en el tier gratuito.</p>
+    </article>
+    <article class="item">
+      <h3>9. Menores de edad</h3>
+      <p>Money J no está dirigida a menores de edad. No recolectamos intencionalmente datos de menores de 18 años.</p>
+    </article>
+    <article class="item">
+      <h3>10. Vigencia y conservación</h3>
+      <p>Esta política aplica mientras mantengas una cuenta activa en Money J. Conservamos tus datos mientras exista tu cuenta o mientras sea necesario para cumplir obligaciones legales; puedes solicitar la eliminación completa de tus datos en cualquier momento.</p>
+    </article>
+    <article class="item">
+      <h3>11. Aceptación</h3>
+      <p>Al marcar la casilla correspondiente durante el registro, declaras haber leído y aceptado esta Política de Tratamiento de Datos Personales.</p>
+    </article>
+  </section>
+
+  <section class="doc" id="terminos">
+    <h2>Términos y Condiciones</h2>
+    <div class="updated">Última actualización: 21 de agosto de 2026</div>
+
+    <article class="item">
+      <h3>1. Aceptación de los términos</h3>
+      <p>Al crear una cuenta y usar Money J, aceptas estos Términos y Condiciones en su totalidad. Si no estás de acuerdo con alguna parte, no debes usar la aplicación.</p>
+    </article>
+    <article class="item">
+      <h3>2. Qué es Money J</h3>
+      <p>Money J es una herramienta de software para que una persona lleve el control de sus propios ingresos y gastos: registro de movimientos, categorías, alertas de pago y análisis del flujo de dinero. Money J NO es una entidad financiera, NO gestiona ni transfiere dinero real, NO se conecta a tus cuentas bancarias ni a ningún medio de pago, y NO es parte de ninguna transacción que registres — es únicamente la plataforma donde tú anotas y visualizas movimientos que ya ocurrieron o vas a hacer, por tu cuenta.</p>
+    </article>
+    <article class="item">
+      <h3>3. Tu responsabilidad como usuario</h3>
+      <p>Eres el único responsable de la exactitud de los ingresos y gastos que registras. Money J únicamente calcula y organiza los valores que tú ingresas — no te asesora financiera ni fiscalmente, y no verifica esa información contra ninguna fuente externa (bancos, entidades de impuestos, etc.). Ante cualquier duda sobre tus finanzas u obligaciones, consulta con un asesor financiero o contable.</p>
+    </article>
+    <article class="item">
+      <h3>4. Tu cuenta</h3>
+      <p>Debes registrarte con información veraz y mantener segura tu contraseña (y, si la activas, tu frase de recuperación local). Eres responsable de toda la actividad que ocurra bajo tu cuenta.</p>
+    </article>
+    <article class="item">
+      <h3>5. Planes Free y Premium</h3>
+      <p>Money J ofrece un plan gratuito (con límites de uso, datos almacenados localmente en tu dispositivo, y anuncios) y un plan Premium por suscripción (sincronización en la nube entre tus dispositivos, límites ampliados, sin anuncios, funciones adicionales de análisis). Los pagos, renovaciones, cancelaciones y reembolsos de la suscripción Premium se gestionan a través de la tienda de aplicaciones donde descargaste Money J (Google Play) y se rigen por las políticas de esa tienda — Money J no procesa ni almacena directamente tus datos de pago.</p>
+    </article>
+    <article class="item">
+      <h3>6. Propiedad de tus datos</h3>
+      <p>Money J, su nombre, marca, diseño e implementación son propiedad de sus desarrolladores. Los datos que tú ingresas (tus ingresos, gastos, alertas) te pertenecen a ti — puedes exportarlos o eliminarlos en cualquier momento desde Configuración.</p>
+    </article>
+    <article class="item">
+      <h3>7. Disponibilidad del servicio</h3>
+      <p>Hacemos un esfuerzo razonable por mantener Money J disponible y funcionando correctamente, pero no garantizamos disponibilidad ininterrumpida. El servicio Premium depende de proveedores externos (Supabase para la nube, RevenueCat y Google Play para las suscripciones) que están fuera de nuestro control directo.</p>
+    </article>
+    <article class="item">
+      <h3>8. Limitación de responsabilidad</h3>
+      <p>Money J se ofrece "tal cual", sin garantías de ningún tipo. En la máxima medida permitida por la ley, no somos responsables por pérdidas o daños derivados del uso de la aplicación o de tus decisiones financieras personales.</p>
+    </article>
+    <article class="item">
+      <h3>9. Cambios a estos términos</h3>
+      <p>Podemos actualizar estos términos en el futuro. Si hacemos cambios relevantes, te lo notificaremos dentro de la aplicación.</p>
+    </article>
+    <article class="item">
+      <h3>10. Terminación</h3>
+      <p>Puedes eliminar tu cuenta y todos tus datos en cualquier momento desde Configuración → Zona de Peligro. Podemos suspender cuentas que incumplan gravemente estos términos.</p>
+    </article>
+    <article class="item">
+      <h3>11. Ley aplicable</h3>
+      <p>Estos términos se rigen por las leyes de la República de Colombia.</p>
+    </article>
+    <article class="item">
+      <h3>12. Contacto</h3>
+      <p>Para preguntas sobre estos términos, escríbenos a <a href="mailto:jjrrdecali90@gmail.com">jjrrdecali90@gmail.com</a>.</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  Money J · <a href="mailto:jjrrdecali90@gmail.com">jjrrdecali90@gmail.com</a>
+</footer>
+
+</body>
+</html>
