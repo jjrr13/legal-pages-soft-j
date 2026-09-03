@@ -16,18 +16,22 @@ Una carpeta por app, cada una con su propio `index.html` (política + términos)
 legal-pages-soft-j/
 ├── credit-j/
 │   ├── index.html            → Política de Datos + Términos de Credit-J
-│   └── eliminar-cuenta.html  → Instrucciones para eliminar cuenta y datos
+│   ├── eliminar-cuenta.html  → Instrucciones para eliminar cuenta y datos
+│   └── invitar.html          → Landing de invitación (QR/link, ver InvitarModal.js)
 └── money-j/
     ├── index.html            → Política de Datos + Términos de Money J
-    └── eliminar-cuenta.html  → Instrucciones para eliminar cuenta y datos
+    ├── eliminar-cuenta.html  → Instrucciones para eliminar cuenta y datos
+    └── invitar.html          → Landing de invitación (QR/link, ver InvitarContactoModal.js)
 ```
+
+`invitar.html` no es un documento legal como los otros dos: es la página a la que apunta el QR/link de invitación de cada app cuando quien escanea NO tiene la app instalada todavía, muestra el código y un botón a Google Play. Lee el código del query param `?codigo=` (JS inline, sin dependencias).
 
 ## URLs publicadas
 
 Con GitHub Pages activado (Settings → Pages → Deploy from a branch → `master` / `root`):
 
-- Credit-J: `https://jjrr13.github.io/legal-pages-soft-j/credit-j/` · `.../credit-j/eliminar-cuenta.html`
-- Money J: `https://jjrr13.github.io/legal-pages-soft-j/money-j/` · `.../money-j/eliminar-cuenta.html`
+- Credit-J: `https://jjrr13.github.io/legal-pages-soft-j/credit-j/` · `.../credit-j/eliminar-cuenta.html` · `.../credit-j/invitar.html?codigo=...`
+- Money J: `https://jjrr13.github.io/legal-pages-soft-j/money-j/` · `.../money-j/eliminar-cuenta.html` · `.../money-j/invitar.html?codigo=...`
 
 ## Mantenimiento
 

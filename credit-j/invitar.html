@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Te invitaron a un negocio en Credit-J</title>
+<style>
+  :root {
+    --purple: #6D28D9;
+    --purple-dark: #47186E;
+    --gold: #F59E0B;
+    --bg: #FAF9FC;
+    --card: #FFFFFF;
+    --text: #241B33;
+    --text-muted: #6B6280;
+    --border: #E7E2F0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+    color: #fff;
+    padding: 44px 20px 36px;
+    text-align: center;
+  }
+  header .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  header .brand {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  header .brand span { color: var(--gold); }
+  header h1 {
+    margin: 4px 0 0;
+    font-size: 19px;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  header p.sub {
+    margin: 6px 0 0;
+    opacity: 0.75;
+    font-size: 14px;
+  }
+  main {
+    max-width: 480px;
+    margin: -22px auto 60px;
+    padding: 0 16px;
+  }
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 26px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 14px rgba(71,24,110,0.08);
+  }
+  .codigo-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+    margin: 0 0 10px;
+  }
+  .codigo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--bg);
+    border: 2px dashed var(--border);
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .codigo-texto {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--purple);
+  }
+  .copiar-btn {
+    border: none;
+    background: var(--purple);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .copiar-btn:active { opacity: 0.85; }
+  .sin-codigo {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  ol.pasos {
+    margin: 0;
+    padding-left: 20px;
+  }
+  ol.pasos li {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+  ol.pasos li:last-child { margin-bottom: 0; }
+  ol.pasos b { color: var(--purple-dark); }
+  .descargar-btn {
+    display: block;
+    text-align: center;
+    background: var(--gold);
+    color: #241B33;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(245,158,11,0.3);
+  }
+  .descargar-btn:active { opacity: 0.9; }
+  .nota {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 10px;
+  }
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    padding: 0 16px 40px;
+  }
+  footer a { color: var(--purple); }
+  @media (max-width: 400px) {
+    header { padding: 36px 16px 30px; }
+    section.card { padding: 22px 16px; }
+    .codigo-texto { font-size: 22px; letter-spacing: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-row">
+    <span class="brand">Credit<span>-J</span></span>
+  </div>
+  <h1>Te invitaron a un negocio en Credit-J</h1>
+  <p class="sub">Alguien quiere sumarte a su equipo en la nube</p>
+</header>
+
+<main>
+  <section class="card">
+    <p class="codigo-label" id="codigoLabel">Tu código de invitación</p>
+    <div class="codigo-box" id="codigoBox">
+      <span class="codigo-texto" id="codigoTexto">— — — — — —</span>
+      <button class="copiar-btn" id="copiarBtn" type="button" onclick="copiarCodigo()">Copiar</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <ol class="pasos">
+      <li>Descargá <b>Credit-J</b> desde Google Play y elegí "Tengo una Invitación" al registrarte (es gratis).</li>
+      <li>Pegá el código de arriba cuando te lo pida.</li>
+      <li>Confirmá y listo, vas a quedar unido al negocio con el rol que te asignaron.</li>
+    </ol>
+  </section>
+
+  <a class="descargar-btn" id="descargarBtn" href="https://play.google.com/store/apps/details?id=com.srjj.creditosapp" target="_blank" rel="noopener">
+    Descargar Credit-J en Google Play
+  </a>
+  <p class="nota">Gratis, con opción Premium para trabajar en equipo</p>
+</main>
+
+<footer>
+  Credit-J · <a href="mailto:jjrrdecali90@gmail.com">jjrrdecali90@gmail.com</a>
+</footer>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var codigo = (params.get('codigo') || '').trim().toUpperCase();
+    var codigoTexto = document.getElementById('codigoTexto');
+    var codigoLabel = document.getElementById('codigoLabel');
+    var copiarBtn = document.getElementById('copiarBtn');
+
+    if (codigo) {
+      codigoTexto.textContent = codigo;
+    } else {
+      codigoLabel.textContent = 'Sin código en el enlace';
+      codigoTexto.textContent = '¿?';
+      copiarBtn.style.display = 'none';
+    }
+
+    window.copiarCodigo = function () {
+      if (!codigo) return;
+      var listo = function () {
+        copiarBtn.textContent = '¡Copiado!';
+        setTimeout(function () { copiarBtn.textContent = 'Copiar'; }, 1600);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(codigo).then(listo);
+      } else {
+        var temp = document.createElement('textarea');
+        temp.value = codigo;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand('copy');
+        document.body.removeChild(temp);
+        listo();
+      }
+    };
+  })();
+</script>
+
+</body>
+</html>
