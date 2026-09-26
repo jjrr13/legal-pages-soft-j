@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Te invitaron a un grupo en Money J</title>
+<title>Te invitaron a Money J</title>
 <style>
   :root {
     --navy: #00254C;
@@ -64,6 +64,21 @@
     padding: 26px 22px;
     margin-bottom: 20px;
     box-shadow: 0 4px 14px rgba(0,37,76,0.08);
+  }
+  .premio-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(1,158,109,0.1);
+    border: 1px solid rgba(1,158,109,0.3);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green);
+    text-align: center;
   }
   .codigo-label {
     font-size: 13px;
@@ -165,13 +180,14 @@
   <div class="logo-row">
     <span class="brand">Money<span> J</span></span>
   </div>
-  <h1>Te invitaron a compartir gastos</h1>
-  <p class="sub">Alguien quiere dividir gastos de grupo contigo</p>
+  <h1>Te invitaron a probar Money J</h1>
+  <p class="sub">Controlá tus ingresos y gastos, gratis</p>
 </header>
 
 <main>
   <section class="card">
-    <p class="codigo-label" id="codigoLabel">Tu código de invitación</p>
+    <div class="premio-banner">🎁 Los dos ganan 7 días de Premium de regalo</div>
+    <p class="codigo-label" id="codigoLabel">Código de referido</p>
     <div class="codigo-box" id="codigoBox">
       <span class="codigo-texto" id="codigoTexto">— — — — — —</span>
       <button class="copiar-btn" id="copiarBtn" type="button" onclick="copiarCodigo()">Copiar</button>
@@ -180,10 +196,10 @@
 
   <section class="card">
     <ol class="pasos">
-      <li>Descargá <b>Money J</b> desde Google Play y creá tu cuenta (es gratis).</li>
-      <li>Entrá a la pestaña <b>Compartidos</b>.</li>
-      <li>Tocá <b>"Tengo un código"</b>.</li>
-      <li>Pegá el código de arriba y listo — vas a ver el grupo y los gastos desde tu propia cuenta.</li>
+      <li>Descargá <b>Money J</b> desde Google Play.</li>
+      <li>Tocá <b>"Crear cuenta"</b> y completá tus datos.</li>
+      <li>En el campo <b>"¿Tenés un código de referido?"</b>, pegá el código de arriba.</li>
+      <li>Registrá tu primer ingreso o gasto — ahí se acredita el premio para los dos.</li>
     </ol>
   </section>
 
